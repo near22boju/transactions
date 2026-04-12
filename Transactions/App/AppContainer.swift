@@ -8,8 +8,7 @@
 
 import Foundation
 import Combine
-import SBLocal
-import SBNetwork
+import SBDomain
 import SBProcess
 
 @MainActor
@@ -17,10 +16,10 @@ final class AppContainer: ObservableObject {
 
     let transactionManager: SBTransactionManager
 
-    init() {
-        let localRepository = SBInMemoryTransactionLocalRepository()
-        let remoteService = SBStubTransactionRemoteService()
-
+    init(
+        localRepository: any SBTransactionLocalRepository,
+        remoteService: any SBTransactionRemoteService
+    ) {
         let repository = SBTransactionRepositoryImpl(
             remoteService: remoteService,
             localRepository: localRepository
