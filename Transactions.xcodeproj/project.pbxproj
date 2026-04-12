@@ -13,6 +13,9 @@
 		EE2560702F8B1BF400A4B014 /* SBDomain in Frameworks */ = {isa = PBXBuildFile; productRef = EE25606F2F8B1BF400A4B014 /* SBDomain */; };
 		EE2560732F8B1C0300A4B014 /* SBProcess in Frameworks */ = {isa = PBXBuildFile; productRef = EE2560722F8B1C0300A4B014 /* SBProcess */; };
 		EE2560762F8B1C0E00A4B014 /* SBViews in Frameworks */ = {isa = PBXBuildFile; productRef = EE2560752F8B1C0E00A4B014 /* SBViews */; };
+		EE95F05D2F8BEEE40020542B /* SBDomain in Frameworks */ = {isa = PBXBuildFile; productRef = EE95F05C2F8BEEE40020542B /* SBDomain */; };
+		EE95F0602F8BEEF60020542B /* SBViews in Frameworks */ = {isa = PBXBuildFile; productRef = EE95F05F2F8BEEF60020542B /* SBViews */; };
+		EE95F0632F8BEF060020542B /* SBProcess in Frameworks */ = {isa = PBXBuildFile; productRef = EE95F0622F8BEF060020542B /* SBProcess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +66,11 @@
 			files = (
 				EE2560762F8B1C0E00A4B014 /* SBViews in Frameworks */,
 				EE2560382F8AE9C700A4B014 /* SBViews in Frameworks */,
+				EE95F0602F8BEEF60020542B /* SBViews in Frameworks */,
 				EE2560702F8B1BF400A4B014 /* SBDomain in Frameworks */,
+				EE95F0632F8BEF060020542B /* SBProcess in Frameworks */,
 				EE2560732F8B1C0300A4B014 /* SBProcess in Frameworks */,
+				EE95F05D2F8BEEE40020542B /* SBDomain in Frameworks */,
 				EE25603B2F8AE9E900A4B014 /* SBProcess in Frameworks */,
 				EE2560352F8AE9A800A4B014 /* SBDomain in Frameworks */,
 			);
@@ -133,6 +139,9 @@
 				EE25606F2F8B1BF400A4B014 /* SBDomain */,
 				EE2560722F8B1C0300A4B014 /* SBProcess */,
 				EE2560752F8B1C0E00A4B014 /* SBViews */,
+				EE95F05C2F8BEEE40020542B /* SBDomain */,
+				EE95F05F2F8BEEF60020542B /* SBViews */,
+				EE95F0622F8BEF060020542B /* SBProcess */,
 			);
 			productName = Transactions;
 			productReference = EE255FE62F8AE12300A4B014 /* Transactions.app */;
@@ -217,9 +226,9 @@
 			mainGroup = EE255FDD2F8AE12300A4B014;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				EE25606E2F8B1BF400A4B014 /* XCLocalSwiftPackageReference "../sbdomain" */,
-				EE2560712F8B1C0300A4B014 /* XCLocalSwiftPackageReference "../sbprocess" */,
-				EE2560742F8B1C0E00A4B014 /* XCLocalSwiftPackageReference "../sbviews" */,
+				EE95F05B2F8BEEE40020542B /* XCLocalSwiftPackageReference "../sbdomain" */,
+				EE95F05E2F8BEEF60020542B /* XCLocalSwiftPackageReference "../sbviews" */,
+				EE95F0612F8BEF060020542B /* XCLocalSwiftPackageReference "../sbprocess" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EE255FE72F8AE12300A4B014 /* Products */;
@@ -606,17 +615,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		EE25606E2F8B1BF400A4B014 /* XCLocalSwiftPackageReference "../sbdomain" */ = {
+		EE95F05B2F8BEEE40020542B /* XCLocalSwiftPackageReference "../sbdomain" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../sbdomain;
 		};
-		EE2560712F8B1C0300A4B014 /* XCLocalSwiftPackageReference "../sbprocess" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../sbprocess;
-		};
-		EE2560742F8B1C0E00A4B014 /* XCLocalSwiftPackageReference "../sbviews" */ = {
+		EE95F05E2F8BEEF60020542B /* XCLocalSwiftPackageReference "../sbviews" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../sbviews;
+		};
+		EE95F0612F8BEF060020542B /* XCLocalSwiftPackageReference "../sbprocess" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../sbprocess;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -644,6 +653,18 @@
 		EE2560752F8B1C0E00A4B014 /* SBViews */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SBViews;
+		};
+		EE95F05C2F8BEEE40020542B /* SBDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBDomain;
+		};
+		EE95F05F2F8BEEF60020542B /* SBViews */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBViews;
+		};
+		EE95F0622F8BEF060020542B /* SBProcess */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBProcess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
