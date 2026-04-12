@@ -58,7 +58,8 @@ public struct SBTransactionDetailView: View {
             }
             .padding(.horizontal, 20)
             .padding(.top, 24)
-            .padding(.bottom, 20)        }
+            .padding(.bottom, 20)
+        }
         .background(Color.black.opacity(0.05))
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
