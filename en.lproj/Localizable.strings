@@ -1,0 +1,12 @@
+//  MARK: - Views ToolTip
+"tooltip.less.message" = "Transactions are processed Monday to Friday (excluding holidays).";
+"tooltip.more.message" = "\n\nTransactions made before 8:30 pm ET Monday to Friday (excluding holidays) will show up in your account the same day.";
+
+//  MARK: - Transaction Detail
+"transaction.detail.title" = "Transaction Details";
+"transaction.detail.close" = "Close";
+"transaction.detail.from" = "From";
+"transaction.detail.amount" = "Amount";
+
+//  MARK: - Transaction List
+"transaction.list.title" = "Transactions";

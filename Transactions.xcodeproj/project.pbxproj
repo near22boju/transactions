@@ -16,6 +16,7 @@
 		EE95F05D2F8BEEE40020542B /* SBDomain in Frameworks */ = {isa = PBXBuildFile; productRef = EE95F05C2F8BEEE40020542B /* SBDomain */; };
 		EE95F0602F8BEEF60020542B /* SBViews in Frameworks */ = {isa = PBXBuildFile; productRef = EE95F05F2F8BEEF60020542B /* SBViews */; };
 		EE95F0632F8BEF060020542B /* SBProcess in Frameworks */ = {isa = PBXBuildFile; productRef = EE95F0622F8BEF060020542B /* SBProcess */; };
+		EE95F0DD2F8C34CE0020542B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE95F0DB2F8C34CE0020542B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 		EE255FE62F8AE12300A4B014 /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE255FF52F8AE12600A4B014 /* TransactionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE255FFF2F8AE12600A4B014 /* TransactionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE95F0DC2F8C34CE0020542B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE95F0DE2F8C34FB0020542B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -96,6 +99,7 @@
 		EE255FDD2F8AE12300A4B014 = {
 			isa = PBXGroup;
 			children = (
+				EE95F0DB2F8C34CE0020542B /* Localizable.strings */,
 				EE255FE82F8AE12300A4B014 /* Transactions */,
 				EE255FF82F8AE12600A4B014 /* TransactionsTests */,
 				EE2560022F8AE12600A4B014 /* TransactionsUITests */,
@@ -222,6 +226,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = EE255FDD2F8AE12300A4B014;
 			minimizedProjectReferenceProxies = 1;
@@ -247,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE95F0DD2F8C34CE0020542B /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,12 +309,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		EE95F0DB2F8C34CE0020542B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE95F0DC2F8C34CE0020542B /* en */,
+				EE95F0DE2F8C34FB0020542B /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		EE2560072F8AE12600A4B014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -373,6 +392,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

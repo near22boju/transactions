@@ -1,0 +1,12 @@
+//  MARK: - Views ToolTip
+"tooltip.less.message" = "Las transacciones se procesan de lunes a viernes (excepto días festivos).";
+"tooltip.more.message" = "\n\nLas transacciones realizadas antes de las 8:30 p. m. (hora del Este), de lunes a viernes (excepto días festivos), se reflejarán en su cuenta el mismo día.";
+
+//  MARK: - Transaction Detail
+"transaction.detail.title" = "Detalles de la transacción";
+"transaction.detail.close" = "Cerrar";
+"transaction.detail.from" = "Desde";
+"transaction.detail.amount" = "Importe";
+
+//  MARK: - Transaction List
+"transaction.list.title" = "Transacciones";
