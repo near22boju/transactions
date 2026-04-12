@@ -7,17 +7,25 @@
 //
 
 import Foundation
+import Combine
 import SBLocal
+import SBNetwork
 import SBProcess
 
 @MainActor
 final class AppContainer: ObservableObject {
-    let transactionRepository: SBTransactionRepository
+
     let transactionManager: SBTransactionManager
 
     init() {
-        let repository = SBInMemoryTransactionRepository()
-        self.transactionRepository = repository
+        let localRepository = SBInMemoryTransactionLocalRepository()
+        let remoteService = SBStubTransactionRemoteService()
+
+        let repository = SBTransactionRepositoryImpl(
+            remoteService: remoteService,
+            localRepository: localRepository
+        )
+
         self.transactionManager = SBTransactionManager(repository: repository)
     }
 }

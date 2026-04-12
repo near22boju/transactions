@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EE2560352F8AE9A800A4B014 /* SBDomain in Frameworks */ = {isa = PBXBuildFile; productRef = EE2560342F8AE9A800A4B014 /* SBDomain */; };
+		EE2560382F8AE9C700A4B014 /* SBViews in Frameworks */ = {isa = PBXBuildFile; productRef = EE2560372F8AE9C700A4B014 /* SBViews */; };
+		EE25603B2F8AE9E900A4B014 /* SBProcess in Frameworks */ = {isa = PBXBuildFile; productRef = EE25603A2F8AE9E900A4B014 /* SBProcess */; };
+		EE2560702F8B1BF400A4B014 /* SBDomain in Frameworks */ = {isa = PBXBuildFile; productRef = EE25606F2F8B1BF400A4B014 /* SBDomain */; };
+		EE2560732F8B1C0300A4B014 /* SBProcess in Frameworks */ = {isa = PBXBuildFile; productRef = EE2560722F8B1C0300A4B014 /* SBProcess */; };
+		EE2560762F8B1C0E00A4B014 /* SBViews in Frameworks */ = {isa = PBXBuildFile; productRef = EE2560752F8B1C0E00A4B014 /* SBViews */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EE255FF62F8AE12600A4B014 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +61,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2560762F8B1C0E00A4B014 /* SBViews in Frameworks */,
+				EE2560382F8AE9C700A4B014 /* SBViews in Frameworks */,
+				EE2560702F8B1BF400A4B014 /* SBDomain in Frameworks */,
+				EE2560732F8B1C0300A4B014 /* SBProcess in Frameworks */,
+				EE25603B2F8AE9E900A4B014 /* SBProcess in Frameworks */,
+				EE2560352F8AE9A800A4B014 /* SBDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +127,12 @@
 			);
 			name = Transactions;
 			packageProductDependencies = (
+				EE2560342F8AE9A800A4B014 /* SBDomain */,
+				EE2560372F8AE9C700A4B014 /* SBViews */,
+				EE25603A2F8AE9E900A4B014 /* SBProcess */,
+				EE25606F2F8B1BF400A4B014 /* SBDomain */,
+				EE2560722F8B1C0300A4B014 /* SBProcess */,
+				EE2560752F8B1C0E00A4B014 /* SBViews */,
 			);
 			productName = Transactions;
 			productReference = EE255FE62F8AE12300A4B014 /* Transactions.app */;
@@ -195,6 +216,11 @@
 			);
 			mainGroup = EE255FDD2F8AE12300A4B014;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EE25606E2F8B1BF400A4B014 /* XCLocalSwiftPackageReference "../sbdomain" */,
+				EE2560712F8B1C0300A4B014 /* XCLocalSwiftPackageReference "../sbprocess" */,
+				EE2560742F8B1C0E00A4B014 /* XCLocalSwiftPackageReference "../sbviews" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EE255FE72F8AE12300A4B014 /* Products */;
 			projectDirPath = "";
@@ -578,6 +604,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EE25606E2F8B1BF400A4B014 /* XCLocalSwiftPackageReference "../sbdomain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../sbdomain;
+		};
+		EE2560712F8B1C0300A4B014 /* XCLocalSwiftPackageReference "../sbprocess" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../sbprocess;
+		};
+		EE2560742F8B1C0E00A4B014 /* XCLocalSwiftPackageReference "../sbviews" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../sbviews;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE2560342F8AE9A800A4B014 /* SBDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBDomain;
+		};
+		EE2560372F8AE9C700A4B014 /* SBViews */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBViews;
+		};
+		EE25603A2F8AE9E900A4B014 /* SBProcess */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBProcess;
+		};
+		EE25606F2F8B1BF400A4B014 /* SBDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBDomain;
+		};
+		EE2560722F8B1C0300A4B014 /* SBProcess */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBProcess;
+		};
+		EE2560752F8B1C0E00A4B014 /* SBViews */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SBViews;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE255FDE2F8AE12300A4B014 /* Project object */;
 }

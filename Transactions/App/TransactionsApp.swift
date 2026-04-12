@@ -1,33 +1,20 @@
 //
-//
 //  TransactionsApp
 //  Transactions
 //
 //  Created by Sivakumar Boju on 4/11/26.
 //  Copyright © 2026 Near 22. All rights reserved.
 //
-    
 
 import SwiftUI
-import SwiftData
 
 @main
 struct TransactionsApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    @StateObject private var container = AppContainer()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(container: container)
         }
-        .modelContainer(sharedModelContainer)
     }
 }
