@@ -29,7 +29,7 @@ A modern iOS Transactions app built with **clean architecture**, **modular Swift
 
 Transactions App Walkthrough
 
-[Watch Demo](./docs/video/transactions.mov)
+[Watch Demo](https://github.com/near22boju/transactions/blob/main/docs/video/transactions.mov)
 
 ---
 
