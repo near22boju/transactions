@@ -12,12 +12,16 @@ import SBDomain
 import SBViews
 
 public struct SBTransactionListView: View {
+
+    //  MARK: - Properties
     @StateObject private var manager: SBTransactionManager
 
+    //  MARK: - Init
     public init(manager: SBTransactionManager) {
         _manager = StateObject(wrappedValue: manager)
     }
 
+    //  MARK: - Main View
     public var body: some View {
         NavigationStack {
             contentView
@@ -28,6 +32,7 @@ public struct SBTransactionListView: View {
         }
     }
 
+    //  MARK: - Sub Views
     @ViewBuilder
     private var contentView: some View {
         ZStack {
@@ -125,6 +130,7 @@ public struct SBTransactionListView: View {
     }
 }
 
+//  MARK: - Helper
 private struct TransactionSection {
     let date: String
     let transactions: [SBTransaction]

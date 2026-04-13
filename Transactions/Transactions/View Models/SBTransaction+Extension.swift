@@ -11,6 +11,7 @@ import SBDomain
 
 public extension SBTransaction {
     
+    //  MARK: - Computed Properties
     var displayAmount: String {
         let value = amount.value
 

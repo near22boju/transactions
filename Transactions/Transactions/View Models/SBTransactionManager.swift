@@ -13,16 +13,19 @@ import SBDomain
 @MainActor
 public final class SBTransactionManager: ObservableObject {
 
+    //  MARK: - Properties
     @Published public private(set) var transactions: [SBTransaction] = []
     @Published public private(set) var isLoading = false
     @Published public private(set) var errorMessage: String?
 
     private let repository: SBTransactionRepository
 
+    //  MARK: - init
     public init(repository: SBTransactionRepository) {
         self.repository = repository
     }
 
+    //  MARK: - Helper Methods
     public func fetchTransactions() async {
         isLoading = true
         errorMessage = nil

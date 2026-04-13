@@ -11,14 +11,17 @@ import SBDomain
 import SBViews
 
 public struct SBTransactionDetailView: View {
+
+    //  MARK: - Properties
     @Environment(\.dismiss) private var dismiss
-    
     let transaction: SBTransaction
     
+    //  MARK: - Init
     public init(transaction: SBTransaction) {
         self.transaction = transaction
     }
     
+    //  MARK: - Main View
     public var body: some View {
         ZStack {
             Color(uiColor: .systemGroupedBackground)
@@ -74,6 +77,7 @@ public struct SBTransactionDetailView: View {
         .overlay(topDividerOverlay)
     }
     
+    //  MARK: - Sub Views
     private var topDividerOverlay: some View {
         VStack {
             Divider()
