@@ -1,0 +1,51 @@
+{
+  "originHash" : "73e9f4f8cd1e217b9b63d1c892ee8d15fb2fd60342686d32adcef1c9cb3872f6",
+  "pins" : [
+    {
+      "identity" : "sbdomain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/near22boju/sbdomain",
+      "state" : {
+        "revision" : "baa6cbd5623f2522a6e38ef2168add653cd7c8b1",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "sblocal",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/near22boju/sblocal.git",
+      "state" : {
+        "revision" : "2ce13587aa5c7d9003fb23547ca3f349e4223176",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "sbnetwork",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/near22boju/sbnetwork.git",
+      "state" : {
+        "revision" : "0b900bb6675a3c15e346dd6f3212fcf5f4b89d04",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "sbprocess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/near22boju/sbprocess",
+      "state" : {
+        "revision" : "3447aebc5a81af36103a759928258a5b3c13fe91",
+        "version" : "1.0.5"
+      }
+    },
+    {
+      "identity" : "sbviews",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/near22boju/sbviews",
+      "state" : {
+        "revision" : "c8d5e02a227c5d68c4fb73507c06a5b305757ad4",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 3
+}
